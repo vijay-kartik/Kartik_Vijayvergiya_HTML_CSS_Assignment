@@ -1,0 +1,90 @@
+.form-container {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 1000px;
+    height: 500px;
+    border: 0px solid green;
+    overflow-y: auto;
+    box-shadow: 0px 20px 20px gray;
+
+}
+.form-left {
+    position: absolute;
+    height: 100%;
+    left: 2%;
+    width: 50%;
+    padding-left: 10px;
+    max-width: 50%;
+}
+.form-right {
+    position: absolute;
+    left: 50%;
+    width: 495px;
+    height: 485px;
+}
+
+img {
+    position: fixed;
+    width: 495px;
+    height: 485px;
+}
+
+.form-sections {
+    margin-bottom: 20px;
+}
+
+.form-sub-section {
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: grid;
+    max-width: 90%;
+    grid-template-columns: auto auto;
+}
+
+input {
+    height: 30px;
+    margin: 5px;
+    padding: 0px 5px;
+    border: none;
+    border-bottom: 1px solid rgb(102, 96, 96);
+    
+}
+
+.label-primary {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.label-secondary {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+select {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 30px;
+    width: 120px;
+}
+
+#form-buttons {
+    position: relative;
+    top: 550px;
+    left: 30%;
+    display: grid;
+    width: fit-content;
+    grid-template-columns: auto auto;
+}
+
+button {
+    margin: 10px 10px;
+    padding: 5px 10px;
+    font-size: 20px;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    background-color: rgb(143, 78, 195);
+}

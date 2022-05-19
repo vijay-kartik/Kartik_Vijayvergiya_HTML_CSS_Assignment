@@ -1,0 +1,181 @@
+body {
+    margin: 0px;
+}
+
+header h1 {
+    position: sticky;
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    margin: 0px;
+    background-color: rgba(0,0,0,0.7);
+}
+
+#navigation {
+    position: sticky;
+    top: 0%;
+    margin-top: 0px;
+    z-index: 1;
+    
+}
+
+.menu {
+    margin: 0px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.menu li{
+    display: inline-block;
+    padding: 10px;
+}
+.menu li:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+#menu-home, #menu-hcare{
+    position: absolute;
+    padding: 0px;
+    margin-top: 10px;
+    display: none;
+    background-color: rgb(144, 186, 206);
+}
+
+.menu li:nth-child(2):hover #menu-home, .menu li:nth-child(3):hover #menu-hcare {
+    display: block;
+
+}
+
+.sub-menu li {
+    display: block;
+    color: steelblue;
+}
+
+h2 {
+    font-size: 30px;
+    padding: 10px 20px;
+    color: black;
+}
+
+#lab-test {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+footer {
+    background-color: black;
+    position: relative;
+    bottom: 0%;
+}
+
+footer > h2 {
+    color: white;
+    font-size: 15px;
+    text-align: end;
+    padding: 10px 20px 10px 0px;
+}
+
+#img-section {
+    position: relative;
+    height: 600px;
+    min-height: 300px;
+    margin: 2px;
+    border: 2px solid steelblue;
+    animation-name: image-change;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes image-change {
+    0% {
+        background-image: url(../Images/Animation/ani1.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: cover;
+    }
+    25% {
+        background-image: url(../Images/Animation/ani2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: cover;
+    }
+    50% {
+        background-image: url(../Images/Animation/ani3.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: cover;
+    }
+    75% {
+        background-image: url(../Images/Animation/ani4.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: cover;
+    }
+    100% {
+        background-image: url(../Images/Animation/ani5.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: cover;
+    }
+}
+
+.grid-container {
+    margin: 20px;
+    padding: 10px;
+}
+
+.product {
+    position: relative;
+    display: inline-block;
+    background-color: rgb(222, 227, 233);
+    width: 14%;
+    height: 200px;
+    min-width: 150px;
+    min-height: 180px;
+    padding: 2px;
+    margin: 20px;
+    vertical-align: middle;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    border-radius: 5px;
+    box-shadow:4px 4px 6px 2px rgba(0,0,0,0.1) ;
+}
+
+
+.product:hover {
+    width: 15%;
+    height: 210px;
+}
+
+.grid-item-header {
+    position: relative;
+    top: 0%;
+    text-align: left;
+
+}
+
+.product img {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    top:2%;
+}
+
+.product button {
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    border-color: violet;
+    background-color: transparent;
+    color:sandybrown ;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.product button:active {
+    background-color: rgb(250, 234, 230);
+    border-color: rgb(0, 255, 76);
+}

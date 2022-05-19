@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <title>Lab Test Form</title>
+    <link rel="stylesheet" href="css/lab-form.css"/>
+</head>
+<body>
+    <section class="form-container">
+    <div class="form-left">
+        <form name="lab-form">
+            <section id="contact-details" class="form-sections">
+                <label class="label-primary">1. Your Contact Details</label>
+                <div class = "form-sub-section">
+                    <input type="text" id="name" name="fullname" placeholder="Full Name" required>
+                    <input type="text" id="pid" name="patientid" placeholder="Patient Id if exists">
+                    <input type="number" id="contact" name="contact" placeholder="Contact Number">
+                    <input type="email" id="email" name="email" placeholder="Email Id" required>
+                </div>
+            </section>
+
+            <section id="address-details" class="form-sections">
+                <label class="label-primary">2. Address</label>
+                <div class="form-sub-section" id="address-details">
+                    <input type="number" id="hno" name="hno" placeholder="H No">
+                    <input type="text" id="street" name="street" placeholder="Street">
+                    <input type="text" id="area" name="area" placeholder="Area">
+                </div>
+                <label class="label-secondary">District</label>
+                <select id="district" name="district" required>
+                    <option value="null">Choose</option>
+                    <option value="jaipur">Jaipur</option>
+                    <option value="kota">Kota</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="blr">Bangalore</option>
+                </select>
+            </section>
+
+            <section id="test-type" class="form-sections">
+                <label class="label-primary">3. Choose the Test type:</label>
+                <br><i style="color: brown;">Check atleast one box without fail</i><br>
+                <input type="checkbox" id="cbc" name="cbc">
+                <label for="cbc"> CBC</label><br>
+                <input type="checkbox" id="urine" name="urine">
+                <label for="urine"> Complete Urine</label><br>
+                <input type="checkbox" id="lipid" name="lipid">
+                <label for="lipid"> Lipid Profile</label><br>
+                <input type="checkbox" id="tsh" name="tsh">
+                <label for="tsh"> Thyroid Stimulating Hormone (TSH)</label><br>
+                <input type="checkbox" id="glucose" name="glucose">
+                <label for="glucose"> Glucose Test</label><br>
+            </section>
+            <section id="report-copy" class="form-sections">
+                <label class="label-primary">4. Do you want a hard copy of the Report also? </label><br>
+                <input type="radio" id="yes" name="report-copy" value="Y">
+                <label for="yes">YES</label>
+                <input type="radio" id="no" name="report-copy" value="N">
+                <label for="no">NO</label>
+            </section>
+
+            <section class="form-sections">
+                <label class="label-primary">5. Select your comfortable Date and Time</label><br>
+                <input type="date" id="date" name="date" placeholder="Date (YYYY-MM-DD)">
+                <input type="time" id="time" name="time" placeholder="Time (HH:MM)">
+            </section>
+        </form>
+    </div>
+    <div class="form-right">
+        <img src="Images/Lab-Test/lab-test.jpg"/>
+    </div>
+</section>
+<section id="form-buttons">
+    <button type="reset" form="lab-form" value="Reset">Reset</button>
+    <button type="submit" form="lab-form" value="Submit">Submit</button> 
+</section>
+</body>
